@@ -1,7 +1,8 @@
 :root {
     --main-font: 'Open Sans', sans-serif;
+    --second-font: 'OrkneyRegular';
     --font-size: 16px;
-    --primario: rgb(252, 209, 17);
+    --primario: rgb(170, 147, 45);
     --secundario: rgb(33, 20, 61);
     --primario-modal: rgba(252, 209, 17, .45);
     --secudario-modal: rgba(33, 20, 61, .85);
@@ -42,7 +43,8 @@ body {
 }
 
 h1 {
-    font-size: 2.4rem;
+    font-family: var(--second-font);
+    font-size: 2.7rem;
 }
 
 h2 {
@@ -70,25 +72,27 @@ img {
 /* Header */
 
 .header {
-    background-image: url(/img/p3.png);
+    max-width: var(--container-with);
+    background-image: url(/img/p3-new.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-position-x: center;
     background-position-y: center;
-    color: var(--primario);
+    color: var(--blanco);
     padding: 3rem 0;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3)
 }
 
 .header h1 {
     margin-top: 0;
+    font-family: var(--second-font);
     font-size: bold;
-    text-shadow: 2px 2px 4px #e0d397;
+    text-shadow: 2px 2px 4px #4d0606;
 }
 
 .contenedor-header h2 {
-    text-shadow: 2px 2px 3px #725f09;
+    text-shadow: 2px 2px 3px #000000;
 }
 
 .contenedor-header span {
@@ -169,6 +173,12 @@ img {
 }
 
 /* Body */
+
+.main {
+    max-width: var(--container-with);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
 
 .aligne-title-left {
     margin-left: 2rem;

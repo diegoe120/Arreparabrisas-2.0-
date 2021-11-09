@@ -104,13 +104,13 @@ img {
 
 .contenedor-header img {
     display: block;
-    margin: auto;
     width: 50%;
     padding: 2%;
 }
 
 .contenedor {
-    max-width: 100%;
+    max-width: var(--container-with);
+    
     margin: 0 auto;
 } 
 
@@ -203,7 +203,7 @@ img {
     font-style: italic;
 }
 
-.imagen_yo {
+.imagen_izq {
     float: left;
     width: 45%;
     max-width: 250px;
@@ -212,9 +212,50 @@ img {
     margin: 0 2% 1% 0;
     transition: transform .5s ease;
 }
+
+.imagen_der {
+    float: right;
+    width: 45%;
+    max-width: 250px;
+    height: 45%;
+    border-radius: 2%;
+    margin: 0 2% 1% 0;
+    transition: transform .5s ease;
+}
+
 .imagen_yo:hover {
     transform: scale(1.1);
 }
+
+/* barra redes sociales */
+.barra-RedesSociales {
+    overflow: hidden;
+    background-color: var(--primario);
+    z-index: 999;
+}
+
+.barra-RedesSociales a {
+    float: right;
+    display: block;
+    color: var(--blanco);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.content {
+    padding: 16px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .content {
+    padding-top: 334px;
+  }
 
 /* Carrusel */
 
